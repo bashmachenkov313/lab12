@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "4426bbb1-55f5-4dfe-b83c-2e1e7aa6fbc2",
+		"name": "Lab12",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33312242",
+		"_collection_link": "https://www.postman.com/navigation-architect-77555415/workspace/lab-mobile/collection/33312242-4426bbb1-55f5-4dfe-b83c-2e1e7aa6fbc2?action=share&source=collection_link&creator=33312242"
+	},
+	"item": [
+		{
+			"name": "Основные функции",
+			"item": [
+				{
+					"name": "Сложение",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 276\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/120+156",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"120+156"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Вычитание",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 50\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/170-120",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"170-120"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Умножение",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 100\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/20*5",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"20*5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Деление",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 4.0\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/20:5",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"20:5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Корень",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 4.0\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/16 sqrt 2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"16 sqrt 2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Степень",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 64\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/4**3",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"4**3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Целочисленное деление",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 5\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/16::3",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"16::3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Остаток от деления",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 2\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/primary_functions/20!3",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"primary_functions",
+								"20!3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Тригонометрия",
+			"item": [
+				{
+					"name": "Синус",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 0.1986\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ sin 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" sin 0.2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Косинус",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 0.980\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ cos 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" cos 0.2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Тангенс",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 0.202\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ tg 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" tg 0.2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Котангес",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 0.53\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ ctg 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" ctg 0.2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Арксинус",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 0.201\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ asin 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" asin 0.2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Арккосинус",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"= 1,369\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olejojek.pythonanywhere.com/trigonometry_functions/ acos 0.2",
+							"protocol": "https",
+							"host": [
+								"olejojek",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"trigonometry_functions",
+								" acos 0.2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
